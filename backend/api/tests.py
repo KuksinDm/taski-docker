@@ -1,9 +1,8 @@
 """Проверка доступности списка задач."""
 from http import HTTPStatus
-from api import models
 
+from api import models
 from django.test import Client, TestCase
-"""Проверка доступности списка задач."""
 
 
 class TaskiAPITestCase(TestCase):
