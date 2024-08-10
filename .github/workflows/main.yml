@@ -40,6 +40,9 @@ jobs:
     - name: Test with flake8 and django tests
       # Добавляем env-переменные для доступа к БД
       env:
+        DJANGO_SECRET_KEY: 'django-insecure-cg6*%6d51ef8f#4!r3*$vmxm4)abgjw8mo!4y-q*uq1!4$-89$'
+        MODE_DEBAG: False
+        ALLOWED_HOSTS: ('158.160.88.167', '127.0.0.1', 'localhost', 'mytasky.zapto.org')
         POSTGRES_USER: django_user
         POSTGRES_PASSWORD: django_password
         POSTGRES_DB: django_db
